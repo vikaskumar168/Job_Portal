@@ -15,7 +15,7 @@ const PostJob = () => {
     data.skills = selectedOptions.map((option) => option.value); // Ensure skills are set correctly
     console.log("Submitting data:", data); // Log the data being sent
 
-    fetch("http://localhost:4000/post-job", {
+    fetch("https://job-portal-hjpi.onrender.com/post-job", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
